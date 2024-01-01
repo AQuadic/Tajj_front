@@ -66,7 +66,11 @@
               </li>
             </ul>
           </div>
+          <button class="lang" id="ch_lang">
+            EN
+          </button>
         </div>
+       
       </nav>
       <section class="about">
         <div class="container">
@@ -287,5 +291,15 @@
         }
       };
     </script>
+      <script>
+        new WOW().init();
+        const btn_lang = document.getElementById("ch_lang");
+        function ch() {
+          window.document.dir === "rtl"
+            ? (window.document.dir = "ltr")
+            : (window.document.dir = "rtl");
+        }
+        btn_lang.addEventListener("click", ch);
+      </script>
   </body>
 </html>

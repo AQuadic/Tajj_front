@@ -394,8 +394,8 @@ header {
   padding-bottom: 60px;
 }
 .about .content .part2 .appLink a {
-  width: 170px;
-  height: 64px;
+  width: 136px;
+  height: 50px;
 }
 .about .content .part2 .appLink a img {
   width: 100%;
@@ -431,6 +431,9 @@ header {
     gap: 12px;
     padding-bottom: 50px;
   }
+  .about .content .part2 {
+    max-width: 100%;
+}
 }
 /*end about*/
 /*stert count*/

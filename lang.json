@@ -1,0 +1,76 @@
+{
+  "ar": {
+    "nav": {
+        "home ": "الصفحة الرئيسية ",
+        "aboutUs": "من نحن",
+        "contactUs": "اتصل بنا",
+        "download": "تنزيل"
+      },
+      "about": {
+        "title1": "أفضل المطاعم والفنادق",
+        "title2": "مع أروع ",
+        "title3": "العروض",
+        "dec": "تطبيق تاج يساعدك في إيجاد الفندق والمطعم المناسب مع أفضل العروض لتحظى بتجربة ممتازة في الامارات والعديد من الدول الأخرى"
+      },
+      "count": {
+        "user": "مستخدم نشط",
+        "restaurant": "مطعم",
+        "hotel": "فندق",
+        "userDec": "انضم إلى مستخدمينا واستمتع بخدماتنا",
+        "restaurantDec": "جميع المطاعم مع أكبر الخصومات",
+        "hotelDec": "فنادق من كل المستويات وبأفضل العروض"
+      },
+      "hotel": {
+        "title": "الفنادق",
+        "title1": "المعلومات ووسائل الراحة",
+        "dec1": "عرض لك جميع معلومات وخدمات الفندق ، بالإضافة إلى التكنولوجيا والعروض الحالية",
+        "title2": "أنواع الغرف",
+        "dec2": "اختر من بين العديد من الغرف الرائعة والمميزة وفقا لما يناسبك",
+        "title3": "التاريخ والسعر",
+        "dec3": "اكتشف الأسعار حسب التاريخ. اختر السعر والوقت المناسبين"
+      },
+      "restaurant": {
+        "title": "المطاعم",
+        "title1": "المعلومات ووسائل الراحة",
+        "dec1": "عرض لك جميع معلومات وخدمات الفندق ، بالإضافة إلى التكنولوجيا والعروض الحالية",
+        "title2": "أنواع الغرف",
+        "dec2": "اختر من بين العديد من الغرف الرائعة والمميزة وفقا لما يناسبك",
+        "title3": "التاريخ والسعر",
+        "dec3": "اكتشف الأسعار حسب التاريخ. اختر السعر والوقت المناسبين"
+      }
+  },
+  "en": {
+    "nav": {
+      "home ": "Home ",
+      "aboutUs": "About us",
+      "contactUs": "Contact us",
+      "download": "Download"
+    },
+    "about": {
+      "title1": "The best restaurants and hotels",
+      "title2": "With the best",
+      "title3": "Offers",
+      "dec": "Taj application helps you find the right hotel and restaurant with the best offers to have an excellent experience in the UAE and many other countries"
+    },
+    "count": {
+      "user": "Active user",
+      "restaurant": "Restaurant",
+      "hotel": "Hotel",
+      "userDec": "Join our users and enjoy our services",
+      "restaurantDec": "All restaurants with the biggest discounts",
+      "hotelDec": "Hotels of all levels and with the best deals"
+    },
+    "hotel": {
+      "title": "Hotel",
+      "title1": "Information & Amenities",
+      "dec1": "We show you all the hotel information and services, as well as current technology and offers ",
+      "title2": "Room Types",
+      "dec2": "Choose from many wonderful and distinctive rooms according to what suits you",
+      "title3": "Date & Price",
+      "dec3": "Find out prices by date. Choose the appropriate price and time"
+    },
+    "restaurant": {
+      "title": "Restaurants"
+    }
+  }
+}

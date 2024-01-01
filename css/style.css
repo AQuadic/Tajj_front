@@ -24,19 +24,19 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Josefin1";
+  font-family: "DIN1";
   src: url("../fonts/JosefinSans-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "Josefin2";
+  font-family: "DIN2";
   src: url("../fonts/JosefinSans-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Josefin3";
+  font-family: "DIN3";
   src: url("../fonts/JosefinSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
@@ -283,7 +283,7 @@ header {
   background-color: #35648b;
   padding: 6px 12px;
   font-size: 14px;
-  font-family: "Josefin1";
+  font-family: "DIN1";
   color: #f5cc51;
   border: none;
   border-radius: 6px;
@@ -580,7 +580,7 @@ header {
 }
 .hotels .content .part1 .decHotels ul li .infoHotel h3 {
   color: #fff;
-  font-family: Josefin2;
+  font-family: DIN2;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
@@ -588,7 +588,7 @@ header {
 }
 .hotels .content .part1 .decHotels ul li .infoHotel p {
   color: #fff;
-  font-family: Josefin3;
+  font-family: DIN3;
   font-size: 16px;
   line-height: 24px;
 }
@@ -716,3 +716,110 @@ footer .content ul li .footerLink.active{
 }
 }
 /*end footer*/
+/* aboutPage*/
+.aboutPage{
+  text-align: center;
+  margin-top: 180px;
+  padding-bottom: 50px;
+}
+.aboutPage h2{
+  color: #FFF;
+font-family: DIN1;
+font-size: 44px;
+line-height: 153.1%; 
+margin-bottom: 30px;
+}
+.aboutPage p{
+  color: #FFF;
+text-align: center;
+font-family: DIN3;
+font-size: 24px;
+line-height: 153.1%; 
+max-width:  477px;
+text-align: center;
+margin: auto;
+}
+.aboutPage .appLink{
+  display: flex;
+  align-items: center;
+justify-content: center;
+gap: 24px;
+margin-top: 42px;
+}
+.aboutPage .appLink a{
+  width: 136px;
+height: 50px;
+}
+.aboutPage .appLink a img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.aboutUSInfo {
+  min-height: 1100px;
+}
+.aboutUSInfo .content{
+margin: 50px 0px 60px;
+}
+.aboutUSInfo .content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.aboutUSInfo .content ul li{}
+.aboutUSInfo .content ul li h3{
+  color: #1E1E1E;
+font-family: DIN1;
+font-size: 36px;
+line-height: 153.1%;
+margin-bottom: 24px;
+}
+.aboutUSInfo .content ul li p{
+  color: #1E1E1E;
+font-family: DIN3;
+font-size: 24px;
+line-height: 153.1%; 
+}
+@media (max-width: 768px) {
+  .aboutUSInfo {
+    min-height: auto;
+  }
+  .aboutUSInfo .content ul li h3{
+  font-size: 28px;
+  margin-bottom: 18px;
+  }
+  .aboutUSInfo .content ul li p {
+    font-size: 20px;
+}
+.aboutUSInfo .content ul {
+ 
+  gap: 28px;
+}
+.aboutPage {
+  margin-top: 50px;
+  padding-bottom: 48px;
+}
+.aboutPage h2 {
+
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+.aboutPage p {
+ 
+  font-size: 20px;
+  
+}
+.aboutPage .appLink {
+  
+  gap: 10px;
+  margin-top: 28px;
+}
+}
+/*end aboutPage*/
+
+/*contactUs*/
+.contactUs{
+  min-height: 1100px;
+}
+/*end contactUs*/

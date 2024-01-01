@@ -402,9 +402,11 @@ header {
   height: auto;
 }
 @media (max-width: 992px) {
-  .about .content .part1 {
-    display: none;
-  }
+ 
+  .about .content {
+    gap: 6px;
+    flex-direction: column;
+}
   .about .content .part2 p {
     margin-bottom: 28px;
     max-width: 560px;
@@ -412,8 +414,12 @@ header {
   .about .content .part2 h1 {
     margin-bottom: 28px;
   }
+
 }
 @media (max-width: 480px) {
+  .about .content .part1 {
+    max-width: 90%;
+}
   .about .content .part2 h1 {
     font-size: 38px;
     line-height: 110%;
@@ -429,7 +435,7 @@ header {
   }
   .about .content .part2 .appLink {
     gap: 12px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .about .content .part2 {
     max-width: 100%;
@@ -617,7 +623,7 @@ header {
 }
 @media (max-width: 992px) {
   .hotels .content .part2 {
-    display: none;
+   
   }
   .hotels .content {
     justify-content: flex-start;
@@ -640,7 +646,7 @@ header {
     padding: 22px 18px;
   }
   .hotels .content .part1 {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .hotels .restaurent::before {
     width: 80px;
@@ -648,6 +654,11 @@ header {
     bottom: 18%;
     right: 72%;
   }
+  .hotels .content {
+    gap: 0px;
+    flex-direction: column !important;
+    margin-top: 26px;
+}
 }
 /*end hotels*/
 /*start footer*/

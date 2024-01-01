@@ -279,18 +279,14 @@ header {
 
   position: relative;
 }
-.navbar .lang{
-  position: absolute;
-  top: 12px;
-  right: 80px;
-  background-color: white;
-  background: var(--offer, linear-gradient(164deg, #ffed8c 15.43%, #f4b335 83.92%) );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 8px 10px;
+.navbar .lang {
+  background-color: #35648b;
+  padding: 6px 12px;
   font-size: 14px;
   font-family: "Josefin1";
+  color: #f5cc51;
+  border: none;
+  border-radius: 6px;
 }
 @media (max-width: 992px) {
 
@@ -329,12 +325,7 @@ header {
   }
 }
 @media (max-width: 400px) {
-  .navbar .lang {
-    top: 15px;
-    right: 70px;
-    padding: 6px 8px;
-    font-size: 12px;
-}
+
 .navbar-brand {
   width: 76px;
   padding: 8px 12px;

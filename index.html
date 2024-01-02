@@ -117,7 +117,7 @@
             data-wow-delay="0s"
           >
             <div class="num">
-              <h2 id="counter" data-to="256">0</h2>
+              <h2 class="counter"  data-count="256">0</h2>
             </div>
             <h3>فندق</h3>
             <p>فنادق من كل المستويات وبأفضل العروض</p>
@@ -129,7 +129,7 @@
           >
             <div class="num">
               <h2 class="valueNum">
-                <h2 id="counter2" data-to="500">0</h2>
+                <h2 class="counter" data-count="20">0</h2>
               </h2>
             </div>
             <h3>مطعم</h3>
@@ -141,7 +141,7 @@
             data-wow-delay="0.2s"
           >
             <div class="num">
-              <h2 id="counter3" data-to="15000">0</h2>
+              <h2 class="counter" data-count="  15000">0</h2>
             </div>
             <h3>مستخدم نشط</h3>
 
@@ -353,54 +353,43 @@
       }
       btn_lang.addEventListener("click", ch);
     </script>
-    <script>
-      const targetValue = 500000000; // Example: 7500
-      const counterElement = document.getElementById("counter");
-      const counterElement2 = document.getElementById("counter2");
-      const counterElement3 = document.getElementById("counter3");
-      const counter = document.getElementById("count");
-      const animationDuration = 2000; // in milliseconds
-      const framesPerSecond = 60;
-
-      const functionElement = (e, value) => {
-        const increment = value / (animationDuration / 1000) / framesPerSecond;
-
-        let currentValue = 0;
-        const updateCounter = () => {
-          currentValue += increment;
-          e.textContent = formatNumber(currentValue.toFixed(0));
-
-          if (currentValue <= value) {
-            requestAnimationFrame(updateCounter);
-          } else {
-            e.textContent = formatNumber(value.toFixed(1));
-          }
-        };
-        updateCounter();
-      };
-     
-      const formatNumber = (num) => {
-        if (num < 1000) {
-          return num.toString();
-        } else if (num < 1000000) {
-          return (num / 1000).toFixed(1) + "K";
-        } else {
-          return (num / 1000000).toFixed(1) + "M";
-        }
-      };
-      let hasRun = false;
-      window.onscroll = () => {
-        //2834
-        const halfScreen = window.screen.height / 1.5 + window.scrollY;
-        if (!hasRun) {
-          functionElement(counterElement, counterElement.dataset.to);
-          functionElement(counterElement2, counterElement2.dataset.to);
-          functionElement(counterElement3, counterElement3.dataset.to);
-          // Set the flag to true to prevent further executions
-          hasRun = true;
-        }
-      };
-    </script>
    
+      <script>
+
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach(counter => {
+            let initial_count = 0;
+            const final_count = counter.dataset.count;
+            // console.log(final_count);
+
+            let  counting = setInterval(updateCounting, 0);
+
+           function updateCounting() {
+
+                if (initial_count < 1000) {
+                    initial_count += 5;
+                    counter.innerText = initial_count;
+                }
+
+                if (initial_count >= 1000) {
+                    initial_count += 100;
+                    counter.innerText = (initial_count / 1000).toFixed(1) + 'K';
+                }
+
+              
+
+                if (initial_count >= 1000000) {
+                    initial_count += 500000;
+                    counter.innerText = (initial_count / 1000000).toFixed(1) + 'M';
+                }
+
+                if (initial_count >= final_count) {
+                    clearInterval(counting);
+                }
+            }
+        })
+
+    </script>
   </body>
 </html>
